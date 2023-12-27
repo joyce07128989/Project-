@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  width: 100%;
+  height: auto;
+  background: white;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  height: auto;
+  color: rgb(79, 78, 78);
+}
+
+
+
+.navbar {
+  position: static;
+  bottom: 120px;
+  width: auto;
+  height: 125px;
+  /* float: right; */
+  padding: 0 0 0 450px;
+}
+
+.nav-link {
+  float: right;
+
+
+}
+
+.buttons {
+  padding: 0;
+  /* Remove default padding to accommodate image */
+  border: none;
+  /* Remove default border for cleaner look */
+  display: flex;
+  /* Align image and text horizontally */
+  justify-content: center;
+  /* Center image within button */
+  align-items: center;
+  /* Vertically center image and text */
+  transition: all 0.3s;
+  border: none;
+  border-radius: 50%;
+}
+
+.buttons img {
+  width: 35px;
+  height: 35px;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 50%;
+
+}
+
+.buttons:hover {
+  background-color: pink;
+}
+
+
+main {
+  height: auto;
+  background: white;
+  padding: 20px;
+  background-image: url(Image/background.png);
+  background-repeat: no-repeat;
+  backface-visibility: visible;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+
+h3{
+  color: orange;
+  text-align: center;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  margin: 50px auto;
+  border: solid #e6a5bb;
+  width: 500px;
+  height: 400px;
+  background-color: #f8eaef;
+  opacity: 75%;
+  text-align: center;
+}
+
+
+
+
+.title{
+  height: 50px
+}
+
+
+th{
+  background-color: #eba0ba;
+  opacity: 75%;
+}
+
+
+table,
+th,
+td {
+  border: 1px solid palevioletred;
+
+}
+
+
+
+
+ol{
+  width: 600px;
+  margin: auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+li{
+  display: inline-block;
+  height: auto;
+  width: 700px;
+  vertical-align: middle;
+}
+
+.donateForm{
+  line-height: 200px;
+  text-align: center;  
+  margin: auto;
+}
+
+
+.donateBtn{
+  width: 200px;
+  height: 130px;
+  border: 3px double #efa9c1;
+  border-radius: 15%;
+  background-image: linear-gradient( to bottom right, white, rgb(248, 169, 182));
+  box-shadow: #efcbd8;
+  background-color: #efcbd8;
+  transition: 1s ease;
+  font-size: larger;  
+  display: inline-block;
+  vertical-align: middle;
+  line-height:1;
+  margin-left: 600px;
+}
+
+
+.donateBtn:hover{
+  transform: scale(1.1);
+  
+} 
+
+
+
+
+
+
+
+
+
+
+/* 網頁導覽 */
+
+.footer {
+  background-color: whitesmoke;
+  padding: 80px 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.footercontainer {
+  max-width: 100%;
+  margin: 100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 15%;
+  padding: 0 0px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  margin-left: 200;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4 ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e6a5bb;
+  width: 80px;
+  height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: black;
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  /* margin-left: 100px; */
+}
+
+.footer-col ul li a:hover {
+  color: black;
+  padding-left: 7px;
+}
+
+.icon {
+  color: lightgray;
+  transition: all 0.5s ease;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+}
+
+
+#fbicon:hover {
+ transform: scale(1.15);
+ background-color: #316FF6;
+}
+
+#insicon:hover{
+  transform: scale(1.15);
+  background-color: orange
+}
+
+#mailicon:hover{
+  transform: scale(1.15);
+  background-color: rgb(200, 200, 244)
+}
+
+#lineicon:hover{
+  transform: scale(1.15);
+  background-color: #00b900
+}
+
+
+
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+
+
+/* figure.customerService{
+              width: 50px;
+              float: right;
+            } */

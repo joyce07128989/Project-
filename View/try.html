@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Initially hide elements */
+    .hidden {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    /* Visible state */
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  <title>Scroll Animation</title>
+</head>
+<body>
+
+  <!-- Your content with class "hidden" initially -->
+  <div class="hidden">Element 1</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 2</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 3</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 1</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 2</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 3</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 1</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 2</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 3</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 1</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 2</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 3</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 1</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 2</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 3</div>
+  <br><br><br><br><br>
+  <div class="hidden">Element 1</div>
+  <div class="hidden">Element 2</div>
+  <div class="hidden">Element 3</div>
+  <!-- Add more elements as needed -->
+
+  <script>
+    // Function to handle the intersection observer callback
+    function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }
+
+    // Create an intersection observer with the callback
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null, // Use the viewport as the root
+      threshold: 1, // Trigger when 50% of the element is visible
+    });
+
+    // Observe all elements with the class "hidden"
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach(element => observer.observe(element));
+  </script>
+
+</body>
+</html>

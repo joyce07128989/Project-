@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    width: 100%;
+    height: auto;
+    background: white;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header {
+  
+    height: auto;
+    color: rgb(79, 78, 78);
+  }
+  
+  
+  /* img.logopicture{
+            width: 10%;
+            height: 115px;
+          } */
+  
+  .navbar {
+    position: static;
+    bottom: 120px;
+    width: auto;
+    height: 125px;
+    /* float: right; */
+    padding: 0 0 0 450px;
+  }
+  
+  .nav-link {
+    float: right;
+  
+  
+  }
+  
+  .buttons {
+    padding: 0;
+    /* Remove default padding to accommodate image */
+    border: none;
+    /* Remove default border for cleaner look */
+    display: flex;
+    /* Align image and text horizontally */
+    justify-content: center;
+    /* Center image within button */
+    align-items: center;
+    /* Vertically center image and text */
+    transition: all 0.3s;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .buttons img {
+    width: 35px;
+    height: 35px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 50%;
+  
+  }
+  
+  .buttons:hover {
+    background-color: pink;
+  }
+
+
+  main {
+    height: auto;
+    background: white;
+    padding: 20px;
+    background-image: url(Image/background.png);
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    background-attachment: fixed;
+    background-size: 100%;
+  
+  }
+
+    
+    
+    .cart {
+    width: 1000px;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20px;
+        }
+      
+        .cart-list {
+    width: 100%;
+    border-collapse: collapse;
+        }
+      
+        .cart-list th, .cart-list td {
+    padding: 10px;
+        }
+      
+        .cart-list th {
+    background-color: #f0f0f0;
+        }
+      
+        .cart-list img {
+    width: 100px;
+    height: 100px;
+        }
+      
+        .cart-total {
+    margin-top: 20px;
+        }
+      
+        .cart-total span {
+    font-size: 18px;
+    font-weight: bold;
+        }
+      
+        .cart-actions {
+    text-align: right;
+    /* width: ;
+    height: ; */
+        }
+
+
+
+/* 網頁導覽 */
+
+.footer {
+  background-color: whitesmoke;
+  padding: 80px 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.footercontainer {
+  max-width: 100%;
+  margin: 100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 15%;
+  padding: 0 0px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  margin-left: 200;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4 ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e6a5bb;
+  width: 80px;
+  height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: black;
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  /* margin-left: 100px; */
+}
+
+.footer-col ul li a:hover {
+  color: black;
+  padding-left: 7px;
+}
+
+.icon {
+  color: lightgray;
+  transition: all 0.5s ease;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+}
+
+
+#fbicon:hover {
+ transform: scale(1.15);
+ background-color: #316FF6;
+}
+
+#insicon:hover{
+  transform: scale(1.15);
+  background-color: orange
+}
+
+#mailicon:hover{
+  transform: scale(1.15);
+  background-color: rgb(200, 200, 244)
+}
+
+#lineicon:hover{
+  transform: scale(1.15);
+  background-color: #00b900
+}
+
+
+
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+
+
+/* figure.customerService{
+              width: 50px;
+              float: right;
+            } */
